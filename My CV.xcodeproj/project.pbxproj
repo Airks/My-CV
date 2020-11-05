@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		BCCD814F2552FD4300519C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD814E2552FD4300519C7C /* AppDelegate.swift */; };
 		BCCD81512552FD4300519C7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD81502552FD4300519C7C /* SceneDelegate.swift */; };
-		BCCD81532552FD4300519C7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD81522552FD4300519C7C /* ViewController.swift */; };
 		BCCD81562552FD4300519C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD81542552FD4300519C7C /* Main.storyboard */; };
 		BCCD81592552FD4300519C7C /* My_CV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCCD81572552FD4300519C7C /* My_CV.xcdatamodeld */; };
 		BCCD815B2552FD4400519C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCD815A2552FD4400519C7C /* Assets.xcassets */; };
 		BCCD815E2552FD4400519C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD815C2552FD4400519C7C /* LaunchScreen.storyboard */; };
 		BCCD81692552FD4400519C7C /* My_CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD81682552FD4400519C7C /* My_CVTests.swift */; };
 		BCCD81742552FD4400519C7C /* My_CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD81732552FD4400519C7C /* My_CVUITests.swift */; };
+		BCCD81FE25541A3D00519C7C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD81FD25541A3D00519C7C /* Card.swift */; };
+		BCCD821425541C2800519C7C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD821325541C2800519C7C /* TabViewController.swift */; };
+		BCCD8219255456F200519C7C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD8218255456F200519C7C /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		BCCD814B2552FD4300519C7C /* My CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My CV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCD814E2552FD4300519C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCD81502552FD4300519C7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCCD81522552FD4300519C7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCCD81552552FD4300519C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCCD81582552FD4300519C7C /* My_CV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_CV.xcdatamodel; sourceTree = "<group>"; };
 		BCCD815A2552FD4400519C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		BCCD816F2552FD4400519C7C /* My CVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My CVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCD81732552FD4400519C7C /* My_CVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_CVUITests.swift; sourceTree = "<group>"; };
 		BCCD81752552FD4400519C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCD81FD25541A3D00519C7C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = SOURCE_ROOT; };
+		BCCD821325541C2800519C7C /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		BCCD8218255456F200519C7C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,11 @@
 		BCCD814D2552FD4300519C7C /* My CV */ = {
 			isa = PBXGroup;
 			children = (
+				BCCD81FD25541A3D00519C7C /* Card.swift */,
+				BCCD8218255456F200519C7C /* CardView.swift */,
 				BCCD814E2552FD4300519C7C /* AppDelegate.swift */,
+				BCCD821325541C2800519C7C /* TabViewController.swift */,
 				BCCD81502552FD4300519C7C /* SceneDelegate.swift */,
-				BCCD81522552FD4300519C7C /* ViewController.swift */,
 				BCCD81542552FD4300519C7C /* Main.storyboard */,
 				BCCD815A2552FD4400519C7C /* Assets.xcassets */,
 				BCCD815C2552FD4400519C7C /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCD81592552FD4300519C7C /* My_CV.xcdatamodeld in Sources */,
-				BCCD81532552FD4300519C7C /* ViewController.swift in Sources */,
+				BCCD81FE25541A3D00519C7C /* Card.swift in Sources */,
 				BCCD814F2552FD4300519C7C /* AppDelegate.swift in Sources */,
+				BCCD821425541C2800519C7C /* TabViewController.swift in Sources */,
+				BCCD8219255456F200519C7C /* CardView.swift in Sources */,
 				BCCD81512552FD4300519C7C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
